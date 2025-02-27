@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+
+}
+h1, h2, h3, button{
+    font-family: 'Josefin Sans',sans-serif;
+}
+p, a{
+    font-family: 'Alata',sans-serif;
+}
+p{
+    color: hsl(0, 0%, 55%);
+    line-height: 1.5rem;
+}
+a{
+    font-size: 0.8rem;
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
+}
+.main{
+    position: relative;
+    background-image: url(images/image-hero.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 0 4.5rem 12.5rem;
+}
+.main::after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(33, 7, 56, 0.534);
+}
+.main *{
+    position: relative;   
+    z-index: 2;
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4rem;
+    margin-bottom: 4rem;
+}
+.h_nav{
+    display: flex;
+    gap: 2rem;
+}
+
+.m_heading{
+    margin-left: 3.5rem;
+    color: hsl(0, 0%, 100%);
+    width: 50%;
+    font-size: 2rem;
+    padding: 2rem;
+    border: hsl(0, 0%, 100%) solid 2px;
+}
+
+.m_section{
+    padding: 5rem;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+
+.main-img{
+    padding: 2rem;
+    width: 50%;
+}
+
+.description{
+    position: relative;
+    width: 50%;
+    padding-top: 10rem;
+    padding: 6rem 2rem 1rem 6rem;
+}
+
+.description h2{
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+.description::after{
+    position: absolute;
+    background-color: white;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.description *{
+    position: relative;   
+    z-index: 1;
+}
+
+.creations{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3em 6rem;
+}
+.creations h2{
+    font-size: 2.5rem;
+    padding: 1rem;
+}
+.creations button{
+    letter-spacing: 5px;
+    padding: 0.7rem 2.3rem;
+    font-weight: bold;
+    border: black solid 1px;
+}
+#columns{
+    padding-bottom: 8rem;
+}
+.col_umn{
+    padding: 1rem 7rem;
+    display: flex;
+    justify-content: space-between;
+}
+.column{
+    position: relative;
+}
+.col_umn h3{
+    position: absolute;
+    bottom: 2rem;
+    left: 2rem;
+    color: rgb(255, 255, 255);
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    z-index: 2;
+}
+#grid{
+    padding-right: 3rem;
+}
+.column::after{
+    position: absolute;
+    content: "";
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    width: 100%;
+    background-color: rgba(50, 50, 50, 0.2);
+}
+
+#footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 7rem;
+    background-color: black;
+}
+.f_logo{
+    padding-bottom: 2rem;
+}
+.f_nav{
+    display: flex;
+    gap: 2rem;
+}
+.social_links{
+    display: flex;
+    gap: 2rem;
+    padding-bottom: 2rem;
+}
